@@ -1,0 +1,33 @@
+header {
+  background-color: $dark-color;
+  color: $light-color;
+  height: 7vw;
+
+  nav {
+    text-align: center;
+
+    img#logo {
+      width: 10vw;
+      border-radius: 50%;
+      border: 0.6vw solid $dark-color;
+    }
+
+    a {
+      display: inline-block;
+      width: 10vw;
+      color: $light-color;
+      font-size: 2vw;
+      font-weight: 100;
+      line-height: 5vw;
+      border-top: 0.2vw solid rgba(0,0,0,0.1);
+      margin: 0 1vw;
+      transition: border-color 0.3s ease-in;
+
+      &:hover {
+        color: $light-color;
+        border-color: $primary-color;
+        text-decoration: none;
+      }
+    }
+  }
+}
