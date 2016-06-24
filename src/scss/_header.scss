@@ -2,6 +2,8 @@ header {
   background-color: $dark-color;
   color: $light-color;
   height: 7vw;
+  width: 100vw;
+  position: fixed;
 
   nav {
     text-align: center;

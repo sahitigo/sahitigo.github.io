@@ -1,0 +1,25 @@
+{
+  "name": "sahitigo.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch-css": "sass -w src/scss/app.scss:css/app.css",
+    "serve": "http-server -p 4000",
+    "start": "npm run watch-css & npm run serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahitigo/sahitigo.github.io.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sahitigo/sahitigo.github.io/issues"
+  },
+  "homepage": "https://github.com/sahitigo/sahitigo.github.io#readme",
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  }
+}
