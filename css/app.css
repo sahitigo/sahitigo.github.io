@@ -14,7 +14,7 @@ header {
       width: 10vw;
       border-radius: 50%;
       border: 0.6vw solid #2c3e50; }
-    header nav a {
+    header nav a.navlink {
       display: inline-block;
       width: 10vw;
       color: #ecf0f1;
@@ -24,7 +24,7 @@ header {
       border-top: 0.2vw solid rgba(0, 0, 0, 0.1);
       margin: 0 1vw;
       transition: border-color 0.3s ease-in; }
-      header nav a:hover {
+      header nav a.navlink:hover {
         color: #ecf0f1;
         border-color: #d35400;
         text-decoration: none; }
