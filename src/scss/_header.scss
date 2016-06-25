@@ -4,6 +4,7 @@ header {
   height: 7vw;
   width: 100vw;
   position: fixed;
+  z-index: 9999;
 
   nav {
     text-align: center;
@@ -28,7 +29,14 @@ header {
       &:hover {
         color: $light-color;
         border-color: $primary-color;
+      }
+
+      &, &:hover, &:active, &:focus, &:visited {
         text-decoration: none;
+      }
+
+      &.selected {
+        border-color: $primary-color;        
       }
     }
   }

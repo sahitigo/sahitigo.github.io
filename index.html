@@ -3,24 +3,64 @@
 <head>
   <title>Sahiti Gopal</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/app.css">
 
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+  <script src="js/wow.min.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" charset="utf-8"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="js/app.js" charset="utf-8"></script>
 </head>
 <body>
   <header>
     <nav>
-      <a href="#" class="navlink">Profile</a>
-      <a href="#" class="navlink">Skills</a>
-      <a href="#">
+      <a href="#" class="navlink carousel-nav-trigger" data-target-slide-index="1">Profile</a>
+      <a href="#" class="navlink carousel-nav-trigger" data-target-slide-index="2">Skills</a>
+      <a href="#" class="carousel-nav-trigger" data-target-slide-index="0">
         <img src="images/logo.jpg" alt="Sahiti Logo" id="logo">
       </a>
-      <a href="#" class="navlink">Work</a>
-      <a href="#" class="navlink">Contact</a>
+      <a href="#" class="navlink carousel-nav-trigger" data-target-slide-index="3">Work</a>
+      <a href="#" class="navlink carousel-nav-trigger" data-target-slide-index="4">Contact</a>
     </nav>
   </header>
-  <section id="land" class="slide">
-    <h1>Sahiti Gopal</h1>
-  </section>
+  <div id="nsg-carousel" class="carousel slide">
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <section id="land" class="main-slide carousel-slide">
+          <div class="land-content clearfix">
+            <div class="alphabet_images pull-right">
+              <img src="images/alphabets/n.jpg" class="img-circle wow bounceInDown" data-wow-duration="2s">
+              <img src="images/alphabets/s.jpg" class="img-circle wow bounceInDown" data-wow-duration="2s" data-wow-delay="0.3s">
+              <img src="images/alphabets/g.jpg" class="img-circle wow bounceInDown" data-wow-duration="2s" data-wow-delay="0.6s">
+            </div>
+            <h1>Sahiti Gopal Naraharisetty</h1>
+          </div>
+        </section>
+      </div>
+      <div class="item">
+        <section id="profile" class="carousel-slide">
+          <h1>Profile</h1>
+        </section>
+      </div>
+      <div class="item">
+        <section id="skills" class="carousel-slide">
+          <h1>Skills</h1>
+        </section>
+      </div>
+      <div class="item">
+        <section id="work" class="carousel-slide">
+          <h1>Work</h1>
+        </section>
+      </div>
+      <div class="item">
+        <section id="contact" class="carousel-slide">
+          <h1>Contact</h1>
+        </section>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

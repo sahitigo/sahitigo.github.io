@@ -4,16 +4,21 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 100; }
 
-.slide {
-  height: 100vh;
-  border: 1px solid transparent; }
+.main-slide {
+  height: 100vh; }
+
+#nsg-carousel {
+  border: none; }
+  #nsg-carousel .carousel-slide {
+    padding-top: 7vw; }
 
 header {
   background-color: #2c3e50;
   color: #ecf0f1;
   height: 7vw;
   width: 100vw;
-  position: fixed; }
+  position: fixed;
+  z-index: 9999; }
   header nav {
     text-align: center; }
     header nav img#logo {
@@ -32,15 +37,32 @@ header {
       transition: border-color 0.3s ease-in; }
       header nav a.navlink:hover {
         color: #ecf0f1;
-        border-color: #d35400;
+        border-color: #d35400; }
+      header nav a.navlink, header nav a.navlink:hover, header nav a.navlink:active, header nav a.navlink:focus, header nav a.navlink:visited {
         text-decoration: none; }
+      header nav a.navlink.selected {
+        border-color: #d35400; }
 
 #land {
   height: 100vh;
   background: url("../images/land-bg.jpg");
   background-size: cover;
-  padding-top: 7vw; }
-  #land h1 {
-    color: #ecf0f1; }
+  background-repeat: no-repeat; }
+  #land .land-content {
+    padding: 3vw 2vw;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 50vh;
+    transform: translateY(-10vw); }
+    #land .land-content h1 {
+      color: #ecf0f1;
+      font-size: 5vw;
+      line-height: 7vw;
+      padding: 0;
+      margin: 0; }
+    #land .land-content img {
+      height: 7vw;
+      margin-right: 2vw; }
+      #land .land-content img:last-child {
+        margin-right: 0; }
 
 /*# sourceMappingURL=app.css.map */
