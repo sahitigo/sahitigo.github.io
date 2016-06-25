@@ -20,6 +20,7 @@ var CarouselNavigator = {
   },
   moveTo: function(i) {
     CarouselNavigator.carouselElement().carousel(i);
+    CarouselNavigator.carouselElement().carousel('pause');
   }
 };
 

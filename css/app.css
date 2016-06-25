@@ -9,6 +9,16 @@ p {
   color: #7f8c8d;
   margin-bottom: 1em; }
 
+p.intro {
+  font-size: 2em;
+  font-weight: 300; }
+
+h3 {
+  font-size: 2.5em; }
+
+h4 {
+  font-size: 1.6em; }
+
 .main-slide {
   height: 100vh; }
 
@@ -75,16 +85,25 @@ header {
 #about .image-container img {
   width: 100%; }
 
-#skills p.intro {
-  font-size: 2em;
-  font-weight: 300; }
-#skills h3 {
-  font-size: 2.5em; }
-#skills h4 {
-  font-size: 1.6em; }
 #skills .skill {
   text-align: center; }
   #skills .skill canvas {
     width: 80%; }
+
+#work .nav-tabs {
+  border-color: #16a085;
+  margin: 3em 0 2em; }
+#work .nav-tabs > li > a {
+  color: #34495e;
+  font-size: 2em;
+  font-weight: 300;
+  padding: 0.5em 1.5em; }
+#work .nav-tabs > li > a:hover {
+  background-color: transparent;
+  color: #16a085;
+  border-color: transparent transparent #16a085; }
+#work .nav-tabs > li.active > a, #work .nav-tabs > li.active > a:focus, #work .nav-tabs > li.active > a:hover {
+  color: #16a085;
+  border-color: #16a085 #16a085 white; }
 
 /*# sourceMappingURL=app.css.map */
