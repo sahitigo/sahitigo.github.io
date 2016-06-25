@@ -10,12 +10,13 @@
   <script src="js/wow.min.js" charset="utf-8"></script>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" charset="utf-8"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="js/circle-progress.js" charset="utf-8"></script>
   <script src="js/app.js" charset="utf-8"></script>
 </head>
 <body>
   <header>
     <nav>
-      <a href="#" class="navlink carousel-nav-trigger" data-target-slide-index="1">Profile</a>
+      <a href="#" class="navlink carousel-nav-trigger" data-target-slide-index="1">About</a>
       <a href="#" class="navlink carousel-nav-trigger" data-target-slide-index="2">Skills</a>
       <a href="#" class="carousel-nav-trigger" data-target-slide-index="0">
         <img src="images/logo.jpg" alt="Sahiti Logo" id="logo">
@@ -41,23 +42,128 @@
         </section>
       </div>
       <div class="item">
-        <section id="profile" class="carousel-slide">
-          <h1>Profile</h1>
+        <section id="about" class="carousel-slide">
+          <div class="container">
+            <h2>About Me</h2>
+            <div class="row">
+              <div class="col-md-6 image-container">
+                <img src="images/about.jpg" alt="Sahiti DP" />
+              </div>
+              <div class="col-md-6">
+                <p>
+                  I am Sahiti. <br>
+                  I am a Computer Science Engineer by education and Designer at heart.
+                </p>
+                <p>
+                  I did bachelors in Computer Science and Engineering from Ramachandra College of Engineering, Eluru. <br>
+                  I have been intersted in arts and crafts right from my childhood. That has naturally slid my heart towards graphic design.
+                </p>
+                <p>
+                  You can generally see me fiddling with my laptop creating few eye-hurting graphics.
+                </p>
+                <p>
+                  While I am free, you can notice me make bursting peoples eardrums with my songs. <br>
+                  Oh! Did I mention that I am a classical singer?
+                </p>
+                <p>
+                  <b>Warning:</b> Navigate to the other parts of this website at your own risk. I am not responsible for any broken hearts or burst eyes or both! Lol!!
+                </p>
+                <p>
+                  Jokes apart, I love designing interfaces those are easy to use and are a candy to eyes. <br>
+                  My goal is to make sure that the users do not think while using interfaces that I design. My contentment with an app design is inversely proportional to amount of brain activity a user has while consuming that app.
+                </p>
+              </div>
+            </div>
+
+          </div>
         </section>
       </div>
       <div class="item">
         <section id="skills" class="carousel-slide">
-          <h1>Skills</h1>
+          <div class="container">
+            <h2>My Skills</h2>
+            <p class="intro">
+              I consider my self a UX and UI designer with a knowledge of front-end development.
+            </p>
+
+            <h3>Design Skills</h3>
+            <div class="row">
+              <div class="col-md-4 skill">
+                <h4>Interaction Design</h4>
+                <div
+                class="skill-circle"
+                data-value="0.8"
+                data-fill="{
+                  &quot;color&quot;: &quot;#16a085&quot;
+                }"
+                ></div>
+              </div>
+              <div class="col-md-4 skill">
+                <h4>Adobe Illustrator</h4>
+                <div
+                class="skill-circle"
+                data-value="0.8"
+                data-fill="{
+                  &quot;color&quot;: &quot;#16a085&quot;
+                }"
+                ></div>
+              </div>
+              <div class="col-md-4 skill">
+                <h4>Adobe Photoshop</h4>
+                <div
+                class="skill-circle"
+                data-value="0.7"
+                data-fill="{
+                  &quot;color&quot;: &quot;#16a085&quot;
+                }"
+                ></div>
+              </div>
+            </div>
+
+            <h3>Front-end Dev Skills</h3>
+            <div class="row">
+              <div class="col-md-4 skill">
+                <h4>HTML5</h4>
+                <div
+                class="skill-circle"
+                data-value="0.9"
+                data-fill="{
+                  &quot;color&quot;: &quot;#16a085&quot;
+                }"
+                ></div>
+              </div>
+              <div class="col-md-4 skill">
+                <h4>CC3</h4>
+                <div
+                class="skill-circle"
+                data-value="0.7"
+                data-fill="{
+                  &quot;color&quot;: &quot;#16a085&quot;
+                }"
+                ></div>
+              </div>
+              <div class="col-md-4 skill">
+                <h4>JavaScript</h4>
+                <div
+                class="skill-circle"
+                data-value="0.4"
+                data-fill="{
+                  &quot;color&quot;: &quot;#16a085&quot;
+                }"
+                ></div>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
       <div class="item">
         <section id="work" class="carousel-slide">
-          <h1>Work</h1>
+          <h2>Work</h2>
         </section>
       </div>
       <div class="item">
         <section id="contact" class="carousel-slide">
-          <h1>Contact</h1>
+          <h2>Contact</h2>
         </section>
       </div>
     </div>
