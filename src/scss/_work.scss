@@ -21,4 +21,83 @@
     color: #16a085;
     border-color: #16a085 #16a085 white;
   }
+
+  #work-process {
+    a.demo {
+      display: block;
+      border: 1px solid $dark-font-color;
+      font-size: 3em;
+      width: 7em;
+      text-align: center;
+      padding: 0.5em 0;
+      border-radius: 4px;
+      margin: 1em auto 2em;
+      background-color: transparent;
+      transition: background-color 0.3s ease-in;
+
+      &, &:hover, &:visited, &:active, &:focus {
+        color: $dark-font-color;
+        text-decoration: none;
+      }
+
+      &:hover {
+        background-color: lighten($dark-font-color, 45%);
+      }
+    }
+  }
+
+  #work-projects {
+    #portfolio {
+      .project {
+        padding: 0;
+        position: relative;
+        z-index: 4;
+        text-align: center;
+        cursor: pointer;
+
+        img {
+          width: 100%;
+          z-index: 5;
+        }
+
+        .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 6;
+          background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        p {
+          color: $light-color;
+          z-index: 7;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          right: 0;
+          font-size: 4em;
+          padding: 0.5em 0 0;
+          transform: translateY(-50%);
+
+          i {
+            font-size: 0.8em;
+            margin-top: 0.5em;
+          }
+        }
+
+        .overlay, p {
+          opacity: 0;
+          transition: opacity 0.3s ease-in;
+        }
+
+        &:hover {
+          .overlay, p {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
 }
