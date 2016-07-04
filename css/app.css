@@ -158,6 +158,48 @@ header {
     transition: opacity 0.3s ease-in; }
   #work #work-projects #portfolio .project:hover .overlay, #work #work-projects #portfolio .project:hover p {
     opacity: 1; }
+#work #work-art div#art-gallery {
+  column-count: 3;
+  column-gap: 0; }
+  #work #work-art div#art-gallery .art-image {
+    transition: .8s opacity;
+    position: relative;
+    text-align: center;
+    break-inside: avoid;
+    border: 2px solid rgba(0, 0, 0, 0.6); }
+    #work #work-art div#art-gallery .art-image img {
+      width: 100%; }
+    #work #work-art div#art-gallery .art-image h3, #work #work-art div#art-gallery .art-image p {
+      opacity: 0;
+      transition: opacity 1s ease-in;
+      color: #fff; }
+    #work #work-art div#art-gallery .art-image h3 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      height: 4rem;
+      font-size: 2rem;
+      margin: 0;
+      padding: 1rem 0; }
+    #work #work-art div#art-gallery .art-image p {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      height: 6rem;
+      font-size: 1.5rem;
+      margin: 0;
+      padding: 0.5rem 0;
+      overflow: hidden; }
+  #work #work-art div#art-gallery:hover .art-image {
+    opacity: 0.3; }
+    #work #work-art div#art-gallery:hover .art-image:hover {
+      opacity: 1; }
+      #work #work-art div#art-gallery:hover .art-image:hover h3, #work #work-art div#art-gallery:hover .art-image:hover p {
+        opacity: 1; }
 
 #project-details-modal .modal-dialog {
   width: 90%;
