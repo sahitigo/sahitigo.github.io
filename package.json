@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "watch-css": "sass -w src/scss/app.scss:css/app.css",
+    "watch-coffee": "coffee -o js -cw src/coffee/app.coffee",
     "serve": "http-server -p 4000",
-    "start": "npm run watch-css & npm run serve",
+    "start": "npm run watch-css & npm run watch-coffee & npm run serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +22,9 @@
   "homepage": "https://github.com/sahitigo/sahitigo.github.io#readme",
   "devDependencies": {
     "http-server": "^0.9.0"
+  },
+  "dependencies": {
+    "coffee-script": "^1.10.0",
+    "sass": "^0.5.0"
   }
 }

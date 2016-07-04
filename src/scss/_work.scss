@@ -24,25 +24,9 @@
 
   #work-process {
     a.demo {
-      display: block;
-      border: 1px solid $dark-font-color;
       font-size: 3em;
       width: 7em;
-      text-align: center;
-      padding: 0.5em 0;
-      border-radius: 4px;
       margin: 1em auto 2em;
-      background-color: transparent;
-      transition: background-color 0.3s ease-in;
-
-      &, &:hover, &:visited, &:active, &:focus {
-        color: $dark-font-color;
-        text-decoration: none;
-      }
-
-      &:hover {
-        background-color: lighten($dark-font-color, 45%);
-      }
     }
   }
 
@@ -97,6 +81,51 @@
             opacity: 1;
           }
         }
+      }
+    }
+  }
+}
+
+#project-details-modal {
+  .modal-dialog {
+    width: 90%;
+    max-width: 1700px;
+
+    .modal-header {
+      background-color: $dark-color;
+      color: $light-color;
+
+      h4 {
+        text-align: center;
+      }
+
+      button span {
+        color: $light-color;
+        font-size: 2em;
+        line-height: 0.5em;
+      }
+    }
+
+    .carousel-inner {
+      margin: 0 15%;
+      width: 70%;
+
+      img.project-img {
+        width: 100%;
+      }
+
+      a.demo, a.source {
+        width: 11em;
+        margin: 0 auto 1em;
+        font-size: 1.2em;
+      }
+    }
+
+    .carousel-control.left, .carousel-control.right {
+      background-image: none;
+
+      span.glyphicon {
+        color: $dark-font-color;
       }
     }
   }

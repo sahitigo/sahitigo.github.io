@@ -19,6 +19,20 @@ h3 {
 h4 {
   font-size: 1.6em; }
 
+a.btn-outline {
+  display: block;
+  border: 1px solid #7f8c8d;
+  text-align: center;
+  padding: 0.5em 0;
+  border-radius: 4px;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in; }
+  a.btn-outline, a.btn-outline:hover, a.btn-outline:visited, a.btn-outline:active, a.btn-outline:focus {
+    color: #7f8c8d;
+    text-decoration: none; }
+  a.btn-outline:hover {
+    background-color: #f8f9f9; }
+
 .main-slide {
   height: 100vh; }
 
@@ -35,7 +49,7 @@ header {
   height: 7vw;
   width: 100vw;
   position: fixed;
-  z-index: 9999; }
+  z-index: 99; }
   header nav {
     text-align: center; }
     header nav img#logo {
@@ -106,21 +120,9 @@ header {
   color: #16a085;
   border-color: #16a085 #16a085 white; }
 #work #work-process a.demo {
-  display: block;
-  border: 1px solid #7f8c8d;
   font-size: 3em;
   width: 7em;
-  text-align: center;
-  padding: 0.5em 0;
-  border-radius: 4px;
-  margin: 1em auto 2em;
-  background-color: transparent;
-  transition: background-color 0.3s ease-in; }
-  #work #work-process a.demo, #work #work-process a.demo:hover, #work #work-process a.demo:visited, #work #work-process a.demo:active, #work #work-process a.demo:focus {
-    color: #7f8c8d;
-    text-decoration: none; }
-  #work #work-process a.demo:hover {
-    background-color: #f8f9f9; }
+  margin: 1em auto 2em; }
 #work #work-projects #portfolio .project {
   padding: 0;
   position: relative;
@@ -156,5 +158,31 @@ header {
     transition: opacity 0.3s ease-in; }
   #work #work-projects #portfolio .project:hover .overlay, #work #work-projects #portfolio .project:hover p {
     opacity: 1; }
+
+#project-details-modal .modal-dialog {
+  width: 90%;
+  max-width: 1700px; }
+  #project-details-modal .modal-dialog .modal-header {
+    background-color: #2c3e50;
+    color: #ecf0f1; }
+    #project-details-modal .modal-dialog .modal-header h4 {
+      text-align: center; }
+    #project-details-modal .modal-dialog .modal-header button span {
+      color: #ecf0f1;
+      font-size: 2em;
+      line-height: 0.5em; }
+  #project-details-modal .modal-dialog .carousel-inner {
+    margin: 0 15%;
+    width: 70%; }
+    #project-details-modal .modal-dialog .carousel-inner img.project-img {
+      width: 100%; }
+    #project-details-modal .modal-dialog .carousel-inner a.demo, #project-details-modal .modal-dialog .carousel-inner a.source {
+      width: 11em;
+      margin: 0 auto 1em;
+      font-size: 1.2em; }
+  #project-details-modal .modal-dialog .carousel-control.left, #project-details-modal .modal-dialog .carousel-control.right {
+    background-image: none; }
+    #project-details-modal .modal-dialog .carousel-control.left span.glyphicon, #project-details-modal .modal-dialog .carousel-control.right span.glyphicon {
+      color: #7f8c8d; }
 
 /*# sourceMappingURL=app.css.map */

@@ -183,14 +183,14 @@
                     <dt>Wireframing</dt>
                     <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt maiores, odio doloremque nesciunt illum temporibus dicta aspernatur cumque iste voluptatem dolorum, hic, molestiae sunt consequuntur.</dd>
                   </dl>
-                  <a href="https://goo.gl/WeWqWH" class="demo" target="_blank">View Demo</a>
+                  <a href="https://goo.gl/WeWqWH" class="demo btn-outline" target="_blank">View Demo</a>
                 </div>
                 <div role="tabpanel" class="tab-pane" id="work-projects">
                   <h3>Projects</h3>
                   <p>Following are some of the projects I have worked on recently.</p>
                   <div id="portfolio" class="row">
-                    <div class="col-md-4 project">
-                      <img src="images/projects/2048.png" alt="">
+                    <div class="col-md-4 project" data-target-slide="0">
+                      <img src="images/projects/2048.jpg" alt="">
                       <div class="overlay"></div>
                       <p>
                         2048
@@ -198,8 +198,8 @@
                         <i class="glyphicon glyphicon-link"></i>
                       </p>
                     </div>
-                    <div class="col-md-4 project">
-                      <img src="images/projects/gallery.png" alt="">
+                    <div class="col-md-4 project" data-target-slide="1">
+                      <img src="images/projects/gallery.jpg" alt="">
                       <div class="overlay"></div>
                       <p>
                         Gallery
@@ -207,8 +207,8 @@
                         <i class="glyphicon glyphicon-link"></i>
                       </p>
                     </div>
-                    <div class="col-md-4 project">
-                      <img src="images/projects/lotr.png" alt="">
+                    <div class="col-md-4 project" data-target-slide="2">
+                      <img src="images/projects/lotr.jpg" alt="">
                       <div class="overlay"></div>
                       <p>
                         LOTR
@@ -216,8 +216,8 @@
                         <i class="glyphicon glyphicon-link"></i>
                       </p>
                     </div>
-                    <div class="col-md-4 project">
-                      <img src="images/projects/calci.png" alt="">
+                    <div class="col-md-4 project" data-target-slide="3">
+                      <img src="images/projects/calci.jpg" alt="">
                       <div class="overlay"></div>
                       <p>
                         Calci
@@ -225,8 +225,8 @@
                         <i class="glyphicon glyphicon-link"></i>
                       </p>
                     </div>
-                    <div class="col-md-4 project">
-                      <img src="images/projects/psd.png" alt="">
+                    <div class="col-md-4 project" data-target-slide="4">
+                      <img src="images/projects/psd.jpg" alt="">
                       <div class="overlay"></div>
                       <p>
                         PSD2HTML
@@ -234,8 +234,8 @@
                         <i class="glyphicon glyphicon-link"></i>
                       </p>
                     </div>
-                    <div class="col-md-4 project">
-                      <img src="images/projects/donate.png" alt="">
+                    <div class="col-md-4 project" data-target-slide="5">
+                      <img src="images/projects/donate.jpg" alt="">
                       <div class="overlay"></div>
                       <p>
                         Donate
@@ -243,8 +243,8 @@
                         <i class="glyphicon glyphicon-link"></i>
                       </p>
                     </div>
-                    <div class="col-md-4 project">
-                      <img src="images/projects/four.png" alt="">
+                    <div class="col-md-4 project" data-target-slide="6">
+                      <img src="images/projects/four.jpg" alt="">
                       <div class="overlay"></div>
                       <p>
                         Four
@@ -252,8 +252,8 @@
                         <i class="glyphicon glyphicon-link"></i>
                       </p>
                     </div>
-                    <div class="col-md-4 project">
-                      <img src="images/projects/lotr.png" alt="">
+                    <div class="col-md-4 project" data-target-slide="7">
+                      <img src="images/projects/lotr.jpg" alt="">
                       <div class="overlay"></div>
                       <p>
                         LOTR
@@ -261,8 +261,8 @@
                         <i class="glyphicon glyphicon-link"></i>
                       </p>
                     </div>
-                    <div class="col-md-4 project">
-                      <img src="images/projects/psd.png" alt="">
+                    <div class="col-md-4 project" data-target-slide="8">
+                      <img src="images/projects/psd.jpg" alt="">
                       <div class="overlay"></div>
                       <p>
                         PSD2HTML
@@ -270,8 +270,6 @@
                         <i class="glyphicon glyphicon-link"></i>
                       </p>
                     </div>
-
-                    (.col-md-4.project > (img+.overlay+p+a.details-trigger))*9
                   </div>
                 </div>
                 <div role="tabpanel" class="tab-pane" id="work-art">
@@ -292,5 +290,150 @@
       </div>
     </div>
   </div>
+
+  <div class="modal fade" id="project-details-modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="gridSystemModalLabel">My Projects</h4>
+        </div>
+        <div class="modal-body">
+          <div id="projects-carousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#projects-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#projects-carousel" data-slide-to="1"></li>
+              <li data-target="#projects-carousel" data-slide-to="2"></li>
+              <li data-target="#projects-carousel" data-slide-to="3"></li>
+              <li data-target="#projects-carousel" data-slide-to="4"></li>
+              <li data-target="#projects-carousel" data-slide-to="5"></li>
+              <li data-target="#projects-carousel" data-slide-to="6"></li>
+              <li data-target="#projects-carousel" data-slide-to="7"></li>
+              <li data-target="#projects-carousel" data-slide-to="8"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <div class="project-details-container">
+                  <div class="row">
+                    <div class="col-xs-6"><img src="images/projects/2048.jpg" alt="" class="project-img"></div>
+                    <div class="col-xs-6">
+                      <h3>2048</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde velit corporis porro sapiente esse, quam deserunt quaerat voluptates beatae tempora.</p>
+                      <a href="" class="source btn-outline" target="_blank">Source Code</a>
+                      <a href="" class="demo btn-outline" target="_blank">Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="project-details-container">
+                  <div class="row">
+                    <div class="col-xs-6"><img src="images/projects/gallery.jpg" alt="" class="project-img"></div>
+                    <div class="col-xs-6">
+                      <h3>Gallery</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde velit corporis porro sapiente esse, quam deserunt quaerat voluptates beatae tempora.</p>
+                      <a href="" class="source btn-outline" target="_blank">Source Code</a>
+                      <a href="" class="demo btn-outline" target="_blank">Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="project-details-container">
+                  <div class="row">
+                    <div class="col-xs-6"><img src="images/projects/lotr.jpg" alt="" class="project-img"></div>
+                    <div class="col-xs-6">
+                      <h3>Lord of The Rings</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde velit corporis porro sapiente esse, quam deserunt quaerat voluptates beatae tempora.</p>
+                      <a href="" class="source btn-outline" target="_blank">Source Code</a>
+                      <a href="" class="demo btn-outline" target="_blank">Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="project-details-container">
+                  <div class="row">
+                    <div class="col-xs-6"><img src="images/projects/calci.jpg" alt="" class="project-img"></div>
+                    <div class="col-xs-6">
+                      <h3>calci</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde velit corporis porro sapiente esse, quam deserunt quaerat voluptates beatae tempora.</p>
+                      <a href="" class="source btn-outline" target="_blank">Source Code</a>
+                      <a href="" class="demo btn-outline" target="_blank">Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="project-details-container">
+                  <div class="row">
+                    <div class="col-xs-6"><img src="images/projects/psd.jpg" alt="" class="project-img"></div>
+                    <div class="col-xs-6">
+                      <h3>PSD2HTML</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde velit corporis porro sapiente esse, quam deserunt quaerat voluptates beatae tempora.</p>
+                      <a href="" class="source btn-outline" target="_blank">Source Code</a>
+                      <a href="" class="demo btn-outline" target="_blank">Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="project-details-container">
+                  <div class="row">
+                    <div class="col-xs-6"><img src="images/projects/donate.jpg" alt="" class="project-img"></div>
+                    <div class="col-xs-6">
+                      <h3>Donate</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde velit corporis porro sapiente esse, quam deserunt quaerat voluptates beatae tempora.</p>
+                      <a href="" class="source btn-outline" target="_blank">Source Code</a>
+                      <a href="" class="demo btn-outline" target="_blank">Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="project-details-container">
+                  <div class="row">
+                    <div class="col-xs-6"><img src="images/projects/four.jpg" alt="" class="project-img"></div>
+                    <div class="col-xs-6">
+                      <h3>Four</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde velit corporis porro sapiente esse, quam deserunt quaerat voluptates beatae tempora.</p>
+                      <a href="" class="source btn-outline" target="_blank">Source Code</a>
+                      <a href="" class="demo btn-outline" target="_blank">Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="project-details-container">
+                  <div class="row">
+                    <div class="col-xs-6"><img src="images/projects/gallery.jpg" alt="" class="project-img"></div>
+                    <div class="col-xs-6">
+                      <h3>Gallery</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde velit corporis porro sapiente esse, quam deserunt quaerat voluptates beatae tempora.</p>
+                      <a href="" class="source btn-outline" target="_blank">Source Code</a>
+                      <a href="" class="demo btn-outline" target="_blank">Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#projects-carousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#projects-carousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
 </body>
 </html>

@@ -4,7 +4,7 @@ header {
   height: 7vw;
   width: 100vw;
   position: fixed;
-  z-index: 9999;
+  z-index: 99;
 
   nav {
     text-align: center;
@@ -36,7 +36,7 @@ header {
       }
 
       &.selected {
-        border-color: $primary-color;        
+        border-color: $primary-color;
       }
     }
   }
